@@ -1,0 +1,44 @@
+table fact_kr_chip_usd_month
+	lineageTag: a4e563fe-622f-5b0f-9391-6545b74db94d
+
+	column month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: 51d59af0-a6ca-551c-b2d4-0a0420fae998
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column chip_exports_usd_bn_est
+		dataType: double
+		lineageTag: 58ecc2cd-47c2-5c22-a9f5-671dcdc23edf
+		summarizeBy: none
+		sourceColumn: chip_exports_usd_bn_est
+
+	column total_exports_usd_bn
+		dataType: double
+		lineageTag: 6202f38b-b302-5ed2-a850-ac35a4283cb5
+		summarizeBy: none
+		sourceColumn: total_exports_usd_bn
+
+	column chip_share_pct_est
+		dataType: double
+		lineageTag: 1ccdc7f8-62ab-5696-856c-5bb58bc99a4d
+		summarizeBy: none
+		sourceColumn: chip_share_pct_est
+
+	partition fact_kr_chip_usd_month = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\fact_kr_chip_usd_month.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"month", "chip_exports_usd_bn_est", "total_exports_usd_bn", "chip_share_pct_est"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"month", type date},
+				        {"chip_exports_usd_bn_est", type number},
+				        {"total_exports_usd_bn", type number},
+				        {"chip_share_pct_est", type number}
+				    })
+				in
+				    #"Typed"

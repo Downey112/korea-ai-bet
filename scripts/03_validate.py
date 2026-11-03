@@ -95,6 +95,16 @@ def main() -> None:
     check("MYS 2025 Comtrade row flagged", len(mys25) == 1 and bool(mys25.is_excluded.iloc[0]),
           "excluded via data/seed/exclusions.csv")
 
+    # 7c. No unflagged one-year spike: chip value moves >50% into a year and >50% out of it
+    t = trade.sort_values(["iso3", "year"]).copy()
+    prev = t.groupby("iso3").chip_exports_usd_bn.shift(1)
+    nxt = t.groupby("iso3").chip_exports_usd_bn.shift(-1)
+    spike = ((t.chip_exports_usd_bn / prev - 1).abs() > 0.5) & ((nxt / t.chip_exports_usd_bn - 1).abs() > 0.5)
+    bad = t[spike & ~t.is_excluded]
+    check("No unflagged one-year chip spikes", bad.empty,
+          ", ".join(f"{r.iso3} {r.year}" for r in bad.itertuples()) or
+          f"{int((spike & t.is_excluded).sum())} spike(s), all flagged")
+
     # 8. Chip share bounded
     s = trade.chip_share_pct
     check("Chip share in (0, 100)", ((s > 0) & (s < 100)).all(), f"[{s.min():.2f}, {s.max():.2f}]")

@@ -1,0 +1,90 @@
+table fact_kr_trade_year
+	lineageTag: 9a5a2987-6e7b-57b6-99b6-476ff13de120
+
+	column year
+		dataType: int64
+		lineageTag: 558ea6c4-0194-5e10-b7e8-f2a93512f4be
+		summarizeBy: none
+		sourceColumn: year
+
+	column series
+		dataType: string
+		lineageTag: 1392dc3b-7b3d-542e-a43e-f4cf6aa82455
+		summarizeBy: none
+		sourceColumn: series
+
+	column value_idx
+		dataType: double
+		lineageTag: 7985b36d-a2d6-5a88-81fc-a69a77ab4843
+		summarizeBy: none
+		sourceColumn: value_idx
+
+	column volume_idx
+		dataType: double
+		lineageTag: 939e9a76-395e-599d-a9df-30b8de31a7a6
+		summarizeBy: none
+		sourceColumn: volume_idx
+
+	column price_idx
+		dataType: double
+		lineageTag: 46910139-5c3d-55cf-a675-221f60556c96
+		summarizeBy: none
+		sourceColumn: price_idx
+
+	column total_exports_usd_bn
+		dataType: double
+		lineageTag: 7c32db3b-164b-5316-818b-9e6a1ef165a0
+		summarizeBy: none
+		sourceColumn: total_exports_usd_bn
+
+	column value_idx_yoy_pct
+		dataType: double
+		lineageTag: 7d37007c-4dbf-5962-a832-e72f53e9e702
+		summarizeBy: none
+		sourceColumn: value_idx_yoy_pct
+
+	column volume_idx_yoy_pct
+		dataType: double
+		lineageTag: d4f50719-109a-5eee-b26f-56e6c2838d70
+		summarizeBy: none
+		sourceColumn: volume_idx_yoy_pct
+
+	column price_idx_yoy_pct
+		dataType: double
+		lineageTag: 18ba9258-c499-57a9-b054-1222ad146605
+		summarizeBy: none
+		sourceColumn: price_idx_yoy_pct
+
+	column implied_value_idx
+		dataType: double
+		lineageTag: 5854529a-50fd-5bcf-9852-05a6d6df71f6
+		summarizeBy: none
+		sourceColumn: implied_value_idx
+
+	column implied_actual_ratio
+		dataType: double
+		lineageTag: 21586b32-a5b1-515d-a7cb-edb79bcc8c7c
+		summarizeBy: none
+		sourceColumn: implied_actual_ratio
+
+	partition fact_kr_trade_year = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\fact_kr_trade_year.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"year", "series", "value_idx", "volume_idx", "price_idx", "total_exports_usd_bn", "value_idx_yoy_pct", "volume_idx_yoy_pct", "price_idx_yoy_pct", "implied_value_idx", "implied_actual_ratio"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"year", Int64.Type},
+				        {"series", type text},
+				        {"value_idx", type number},
+				        {"volume_idx", type number},
+				        {"price_idx", type number},
+				        {"total_exports_usd_bn", type number},
+				        {"value_idx_yoy_pct", type number},
+				        {"volume_idx_yoy_pct", type number},
+				        {"price_idx_yoy_pct", type number},
+				        {"implied_value_idx", type number},
+				        {"implied_actual_ratio", type number}
+				    })
+				in
+				    #"Typed"

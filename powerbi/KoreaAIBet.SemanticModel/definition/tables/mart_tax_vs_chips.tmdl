@@ -1,0 +1,55 @@
+table mart_tax_vs_chips
+	lineageTag: c136653d-6005-5dc6-9a5f-6b2df50abb2a
+
+	column year
+		dataType: int64
+		lineageTag: 906b1eea-da09-5e74-8ce8-18357844a420
+		summarizeBy: none
+		sourceColumn: year
+
+	column corporate_tax_trn_won
+		dataType: double
+		lineageTag: 7ba76eb8-38d8-56e3-a460-dd66290d60f5
+		summarizeBy: none
+		sourceColumn: corporate_tax_trn_won
+
+	column corporate_tax_yoy_pct
+		dataType: double
+		lineageTag: a05ca694-c529-5530-8126-da8a0bf54581
+		summarizeBy: none
+		sourceColumn: corporate_tax_yoy_pct
+
+	column chip_value_idx
+		dataType: double
+		lineageTag: 4767a1af-f5b8-509f-9986-afaeadb4bd60
+		summarizeBy: none
+		sourceColumn: chip_value_idx
+
+	column chip_value_yoy_pct
+		dataType: double
+		lineageTag: f18f3048-328d-508f-8af3-8df9c2ed1eac
+		summarizeBy: none
+		sourceColumn: chip_value_yoy_pct
+
+	column chip_value_yoy_lag1_pct
+		dataType: double
+		lineageTag: 0846e1b3-546c-5445-9504-fb779d4bca7e
+		summarizeBy: none
+		sourceColumn: chip_value_yoy_lag1_pct
+
+	partition mart_tax_vs_chips = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\mart_tax_vs_chips.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"year", "corporate_tax_trn_won", "corporate_tax_yoy_pct", "chip_value_idx", "chip_value_yoy_pct", "chip_value_yoy_lag1_pct"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"year", Int64.Type},
+				        {"corporate_tax_trn_won", type number},
+				        {"corporate_tax_yoy_pct", type number},
+				        {"chip_value_idx", type number},
+				        {"chip_value_yoy_pct", type number},
+				        {"chip_value_yoy_lag1_pct", type number}
+				    })
+				in
+				    #"Typed"

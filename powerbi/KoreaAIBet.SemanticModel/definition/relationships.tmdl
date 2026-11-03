@@ -1,0 +1,11 @@
+relationship f64c68f3-635b-52e2-ac1b-dc6d413424f0
+	fromColumn: fact_indicators.iso3
+	toColumn: dim_country.iso3
+
+relationship 04c07e8b-81c2-5fb4-a418-f2edbaf651be
+	fromColumn: fact_trade_year.iso3
+	toColumn: dim_country.iso3
+
+relationship 48c745bc-0c16-5814-bfc7-3a718f594669
+	fromColumn: mart_peer_snapshot.iso3
+	toColumn: dim_country.iso3

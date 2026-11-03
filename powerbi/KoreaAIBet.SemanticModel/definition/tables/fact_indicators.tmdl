@@ -1,0 +1,49 @@
+table fact_indicators
+	lineageTag: 58c35e02-a4a7-536e-9bd0-b474d04c6a17
+
+	column iso3
+		dataType: string
+		isHidden
+		lineageTag: c99a302f-5030-568c-9668-901b7b5aada1
+		summarizeBy: none
+		sourceColumn: iso3
+
+	column year
+		dataType: int64
+		lineageTag: be72e9f5-9ebe-59e6-acdf-2d1b170a06a7
+		summarizeBy: none
+		sourceColumn: year
+
+	column indicator_code
+		dataType: string
+		lineageTag: 05e42528-718f-5b56-8f54-949ae68c8691
+		summarizeBy: none
+		sourceColumn: indicator_code
+
+	column indicator_name
+		dataType: string
+		lineageTag: 39ae55ac-8d0f-5716-9faf-be7a32c1482a
+		summarizeBy: none
+		sourceColumn: indicator_name
+
+	column value
+		dataType: double
+		lineageTag: ca6da622-0b77-5c7a-9828-af8b80142e17
+		summarizeBy: none
+		sourceColumn: value
+
+	partition fact_indicators = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\fact_indicators.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"iso3", "year", "indicator_code", "indicator_name", "value"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"iso3", type text},
+				        {"year", Int64.Type},
+				        {"indicator_code", type text},
+				        {"indicator_name", type text},
+				        {"value", type number}
+				    })
+				in
+				    #"Typed"

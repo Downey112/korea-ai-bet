@@ -59,7 +59,7 @@ MYS,2004,19.086609,126.639701,15.0716,false,
 MYS,2005,19.703894,141.624046,13.9128,false,
 MYS,2006,21.031661,160.669231,13.09,false,
 MYS,2007,23.40728,175.961863,13.3025,false,
-MYS,2008,5.943221,198.702475,2.991,false,
+MYS,2008,5.943221,198.702475,2.991,true,"Comtrade HS 8542 is US$5.9bn against US$23.4bn in 2007 and US$21.2bn in 2009, while total exports rose 13%. 2008 is Malaysia's last year reported under HS 2002, so this is treated as a classification break, not a real fall."
 MYS,2009,21.218781,157.194832,13.4984,false,
 MYS,2010,22.809402,198.790691,11.4741,false,
 MYS,2011,27.239464,226.992682,12.0002,false,

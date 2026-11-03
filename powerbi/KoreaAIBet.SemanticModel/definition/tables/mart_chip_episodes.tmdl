@@ -1,0 +1,136 @@
+table mart_chip_episodes
+	lineageTag: d959ac00-6bee-5a30-90ff-5db2dedf66ad
+
+	column episode_id
+		dataType: int64
+		lineageTag: 5d323a66-9448-5049-b4c7-fdeb3a10e001
+		summarizeBy: none
+		sourceColumn: episode_id
+
+	column start_month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: 13b57aea-fc3a-5f2f-81bc-b3ab77dd26a8
+		summarizeBy: none
+		sourceColumn: start_month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column end_month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: cf7cec77-653e-5088-8a3a-44b87d9ba34a
+		summarizeBy: none
+		sourceColumn: end_month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column months
+		dataType: int64
+		lineageTag: ece34405-63bc-5cc4-ba6a-e0e88a748f46
+		summarizeBy: none
+		sourceColumn: months
+
+	column is_open
+		dataType: boolean
+		lineageTag: b82bfc65-2a9f-5093-bf40-b2f517c18fc2
+		summarizeBy: none
+		sourceColumn: is_open
+
+	column peak_month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: d2f46888-072b-515f-96e6-ce68334473af
+		summarizeBy: none
+		sourceColumn: peak_month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column peak_value_idx
+		dataType: double
+		lineageTag: 39e6ee8f-8e2c-57a8-b5e7-30ef9ce7b2c7
+		summarizeBy: none
+		sourceColumn: peak_value_idx
+
+	column trough_month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: cbf97227-8ed0-542d-9711-0a5a70906ec9
+		summarizeBy: none
+		sourceColumn: trough_month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column trough_value_idx
+		dataType: double
+		lineageTag: 5310ec1a-6f35-53ff-837c-726e9b3ec768
+		summarizeBy: none
+		sourceColumn: trough_value_idx
+
+	column drop_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: fa183d89-ac53-5929-8420-5fb0483b999a
+		summarizeBy: none
+		sourceColumn: drop_pct
+
+	column price_change_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: c65f80ab-8017-5016-8857-9b491d86eecd
+		summarizeBy: none
+		sourceColumn: price_change_pct
+
+	column volume_change_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: f58901d3-92a0-5f46-a5e1-832d2665fd91
+		summarizeBy: none
+		sourceColumn: volume_change_pct
+
+	column price_share_pct
+		dataType: double
+		formatString: 0.0\%
+		lineageTag: 64318d8b-dc14-5b46-b375-12adc3413d4c
+		summarizeBy: none
+		sourceColumn: price_share_pct
+
+	column volume_share_pct
+		dataType: double
+		formatString: 0.0\%
+		lineageTag: 6895ce25-9fdf-5d48-815e-d5e8fa5aa686
+		summarizeBy: none
+		sourceColumn: volume_share_pct
+
+	column all_goods_drop_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: 122ce072-9f92-575a-94c1-c31299833f45
+		summarizeBy: none
+		sourceColumn: all_goods_drop_pct
+
+	partition mart_chip_episodes = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\mart_chip_episodes.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"episode_id", "start_month", "end_month", "months", "is_open", "peak_month", "peak_value_idx", "trough_month", "trough_value_idx", "drop_pct", "price_change_pct", "volume_change_pct", "price_share_pct", "volume_share_pct", "all_goods_drop_pct"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"episode_id", Int64.Type},
+				        {"start_month", type date},
+				        {"end_month", type date},
+				        {"months", Int64.Type},
+				        {"is_open", type logical},
+				        {"peak_month", type date},
+				        {"peak_value_idx", type number},
+				        {"trough_month", type date},
+				        {"trough_value_idx", type number},
+				        {"drop_pct", type number},
+				        {"price_change_pct", type number},
+				        {"volume_change_pct", type number},
+				        {"price_share_pct", type number},
+				        {"volume_share_pct", type number},
+				        {"all_goods_drop_pct", type number}
+				    })
+				in
+				    #"Typed"

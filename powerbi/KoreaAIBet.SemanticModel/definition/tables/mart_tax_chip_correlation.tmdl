@@ -1,0 +1,55 @@
+table mart_tax_chip_correlation
+	lineageTag: 2eab5d3a-8f5b-5471-b5d0-6b7d3dc9b882
+
+	column relationship
+		dataType: string
+		lineageTag: 632ba8cd-65cf-5605-b77a-a456a1a9f864
+		summarizeBy: none
+		sourceColumn: relationship
+
+	column lag
+		dataType: int64
+		lineageTag: 37785fed-6d27-5bb8-8123-c2f50b417542
+		summarizeBy: none
+		sourceColumn: lag
+
+	column pearson_r
+		dataType: double
+		lineageTag: 23146685-e9d3-58fc-bcb2-ad4ac9610eb2
+		summarizeBy: none
+		sourceColumn: pearson_r
+
+	column n
+		dataType: int64
+		lineageTag: df3746ff-04ca-56b7-bcaa-0e0d2b1804bf
+		summarizeBy: none
+		sourceColumn: n
+
+	column first_year
+		dataType: int64
+		lineageTag: 92761886-9649-50c2-8e33-021977933b55
+		summarizeBy: none
+		sourceColumn: first_year
+
+	column last_year
+		dataType: int64
+		lineageTag: 4e5e6881-aa79-53d0-b706-2532473460ab
+		summarizeBy: none
+		sourceColumn: last_year
+
+	partition mart_tax_chip_correlation = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\mart_tax_chip_correlation.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"relationship", "lag", "pearson_r", "n", "first_year", "last_year"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"relationship", type text},
+				        {"lag", Int64.Type},
+				        {"pearson_r", type number},
+				        {"n", Int64.Type},
+				        {"first_year", Int64.Type},
+				        {"last_year", Int64.Type}
+				    })
+				in
+				    #"Typed"

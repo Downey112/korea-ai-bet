@@ -1,0 +1,34 @@
+table dim_country
+	lineageTag: 3a3b3f86-8816-5f3e-8888-b1d1bba76599
+
+	column iso3
+		dataType: string
+		lineageTag: de485820-4bdc-5303-a05e-0ea4be66ab6c
+		summarizeBy: none
+		sourceColumn: iso3
+
+	column name
+		dataType: string
+		lineageTag: 3fbc5847-9789-5193-8c31-69fb8adece82
+		summarizeBy: none
+		sourceColumn: name
+
+	column is_focus
+		dataType: boolean
+		lineageTag: 24fea2fc-9d79-5d53-aba7-1778db11c761
+		summarizeBy: none
+		sourceColumn: is_focus
+
+	partition dim_country = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\dim_country.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"iso3", "name", "is_focus"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"iso3", type text},
+				        {"name", type text},
+				        {"is_focus", type logical}
+				    })
+				in
+				    #"Typed"

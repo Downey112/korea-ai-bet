@@ -1,0 +1,175 @@
+table mart_peer_snapshot
+	lineageTag: 912bcd68-e7ae-5c50-9f36-8d79982ffbd6
+
+	column iso3
+		dataType: string
+		isHidden
+		lineageTag: 936d3314-9c13-5fc4-93de-6f9b3a2cc57c
+		summarizeBy: none
+		sourceColumn: iso3
+
+	column country_name
+		dataType: string
+		lineageTag: 8999a846-d3d3-5a8f-b2c1-8354f2e365d8
+		summarizeBy: none
+		sourceColumn: country_name
+
+	column fertility_rate_2000
+		dataType: double
+		lineageTag: b69260ce-2356-580c-a04d-6bf9094669cc
+		summarizeBy: none
+		sourceColumn: fertility_rate_2000
+
+	column fertility_rate_latest
+		dataType: double
+		lineageTag: e84949cc-0aab-5fe1-b74d-8d6f0a06c896
+		summarizeBy: none
+		sourceColumn: fertility_rate_latest
+
+	column fertility_rate_latest_year
+		dataType: int64
+		lineageTag: 35555f42-4e7f-58b5-91ba-1d0d978da2db
+		summarizeBy: none
+		sourceColumn: fertility_rate_latest_year
+
+	column pop_65plus_pct_2000
+		dataType: double
+		lineageTag: 7eb17c15-1463-56d7-a81d-3c82dedbe38d
+		summarizeBy: none
+		sourceColumn: pop_65plus_pct_2000
+
+	column pop_65plus_pct_latest
+		dataType: double
+		lineageTag: 9f3f47e4-9660-5f47-baa9-4ee348b3f930
+		summarizeBy: none
+		sourceColumn: pop_65plus_pct_latest
+
+	column pop_65plus_pct_latest_year
+		dataType: int64
+		lineageTag: 2933f77e-49ab-5521-a219-9ef6d5bc9821
+		summarizeBy: none
+		sourceColumn: pop_65plus_pct_latest_year
+
+	column pop_working_pct_2000
+		dataType: double
+		lineageTag: 9902bc57-b3f7-5d99-8e79-da0c695df3e9
+		summarizeBy: none
+		sourceColumn: pop_working_pct_2000
+
+	column pop_working_pct_latest
+		dataType: double
+		lineageTag: 1a8404c5-0a52-55d3-b3a9-8598db0a923d
+		summarizeBy: none
+		sourceColumn: pop_working_pct_latest
+
+	column pop_working_pct_latest_year
+		dataType: int64
+		lineageTag: e90abc35-f80f-5ae2-9ad4-11568d3b16d9
+		summarizeBy: none
+		sourceColumn: pop_working_pct_latest_year
+
+	column pop_working_count_2000
+		dataType: double
+		lineageTag: 5b4809ef-ee80-50d3-bba9-c20705ae1bda
+		summarizeBy: none
+		sourceColumn: pop_working_count_2000
+
+	column pop_working_count_latest
+		dataType: double
+		lineageTag: cacff218-078e-52e5-8331-1b3f6a4008c3
+		summarizeBy: none
+		sourceColumn: pop_working_count_latest
+
+	column pop_working_count_latest_year
+		dataType: int64
+		lineageTag: 430ea7cf-fbbd-57b2-919a-8b2e5dac49a3
+		summarizeBy: none
+		sourceColumn: pop_working_count_latest_year
+
+	column gdp_growth_pct_2000
+		dataType: double
+		lineageTag: e615a68d-ebb2-527b-a4f4-6013251365ea
+		summarizeBy: none
+		sourceColumn: gdp_growth_pct_2000
+
+	column gdp_growth_pct_latest
+		dataType: double
+		lineageTag: 1565ada2-ec87-5033-93f7-b5d38982c352
+		summarizeBy: none
+		sourceColumn: gdp_growth_pct_latest
+
+	column gdp_growth_pct_latest_year
+		dataType: int64
+		lineageTag: 3e7a148f-a966-52f1-a9f2-f12a83110d5c
+		summarizeBy: none
+		sourceColumn: gdp_growth_pct_latest_year
+
+	column rd_pct_gdp_2000
+		dataType: double
+		lineageTag: 05329d6f-c8de-551e-87d6-631781cdae41
+		summarizeBy: none
+		sourceColumn: rd_pct_gdp_2000
+
+	column rd_pct_gdp_latest
+		dataType: double
+		lineageTag: eb7c02ae-29a3-5501-a886-87cef212ae9a
+		summarizeBy: none
+		sourceColumn: rd_pct_gdp_latest
+
+	column rd_pct_gdp_latest_year
+		dataType: int64
+		lineageTag: ba3cca39-c7b9-5ba0-bff8-257302679c29
+		summarizeBy: none
+		sourceColumn: rd_pct_gdp_latest_year
+
+	column export_pct_gdp_2000
+		dataType: double
+		lineageTag: c6190eda-d814-5e38-a1c7-f778b91ef69f
+		summarizeBy: none
+		sourceColumn: export_pct_gdp_2000
+
+	column export_pct_gdp_latest
+		dataType: double
+		lineageTag: adfe84f7-2c7d-5365-998c-3298f464228e
+		summarizeBy: none
+		sourceColumn: export_pct_gdp_latest
+
+	column export_pct_gdp_latest_year
+		dataType: int64
+		lineageTag: 74d01bb0-f203-5afa-9628-00a13882fdc6
+		summarizeBy: none
+		sourceColumn: export_pct_gdp_latest_year
+
+	partition mart_peer_snapshot = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\mart_peer_snapshot.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"iso3", "country_name", "fertility_rate_2000", "fertility_rate_latest", "fertility_rate_latest_year", "pop_65plus_pct_2000", "pop_65plus_pct_latest", "pop_65plus_pct_latest_year", "pop_working_pct_2000", "pop_working_pct_latest", "pop_working_pct_latest_year", "pop_working_count_2000", "pop_working_count_latest", "pop_working_count_latest_year", "gdp_growth_pct_2000", "gdp_growth_pct_latest", "gdp_growth_pct_latest_year", "rd_pct_gdp_2000", "rd_pct_gdp_latest", "rd_pct_gdp_latest_year", "export_pct_gdp_2000", "export_pct_gdp_latest", "export_pct_gdp_latest_year"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"iso3", type text},
+				        {"country_name", type text},
+				        {"fertility_rate_2000", type number},
+				        {"fertility_rate_latest", type number},
+				        {"fertility_rate_latest_year", Int64.Type},
+				        {"pop_65plus_pct_2000", type number},
+				        {"pop_65plus_pct_latest", type number},
+				        {"pop_65plus_pct_latest_year", Int64.Type},
+				        {"pop_working_pct_2000", type number},
+				        {"pop_working_pct_latest", type number},
+				        {"pop_working_pct_latest_year", Int64.Type},
+				        {"pop_working_count_2000", type number},
+				        {"pop_working_count_latest", type number},
+				        {"pop_working_count_latest_year", Int64.Type},
+				        {"gdp_growth_pct_2000", type number},
+				        {"gdp_growth_pct_latest", type number},
+				        {"gdp_growth_pct_latest_year", Int64.Type},
+				        {"rd_pct_gdp_2000", type number},
+				        {"rd_pct_gdp_latest", type number},
+				        {"rd_pct_gdp_latest_year", Int64.Type},
+				        {"export_pct_gdp_2000", type number},
+				        {"export_pct_gdp_latest", type number},
+				        {"export_pct_gdp_latest_year", Int64.Type}
+				    })
+				in
+				    #"Typed"

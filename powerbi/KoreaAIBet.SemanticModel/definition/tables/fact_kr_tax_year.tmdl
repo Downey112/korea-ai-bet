@@ -1,0 +1,44 @@
+table fact_kr_tax_year
+	lineageTag: d6246aa8-eeb3-564b-b940-d5fe104c327c
+
+	column year
+		dataType: int64
+		lineageTag: e2a622ec-0bd3-5ca7-9b3c-35afc0985228
+		summarizeBy: none
+		sourceColumn: year
+
+	column corporate_tax_trn_won
+		dataType: double
+		formatString: #,0.0
+		lineageTag: b7551e05-d3e3-522a-ab01-6784de051fd2
+		summarizeBy: none
+		sourceColumn: corporate_tax_trn_won
+
+	column total_tax_trn_won
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 4ea7892f-8342-5310-bcc3-2ddda7828e18
+		summarizeBy: none
+		sourceColumn: total_tax_trn_won
+
+	column corp_share_pct
+		dataType: double
+		formatString: 0.0\%
+		lineageTag: 262085c3-b08f-5d64-8590-3c7e7b6927a0
+		summarizeBy: none
+		sourceColumn: corp_share_pct
+
+	partition fact_kr_tax_year = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\fact_kr_tax_year.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"year", "corporate_tax_trn_won", "total_tax_trn_won", "corp_share_pct"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"year", Int64.Type},
+				        {"corporate_tax_trn_won", type number},
+				        {"total_tax_trn_won", type number},
+				        {"corp_share_pct", type number}
+				    })
+				in
+				    #"Typed"

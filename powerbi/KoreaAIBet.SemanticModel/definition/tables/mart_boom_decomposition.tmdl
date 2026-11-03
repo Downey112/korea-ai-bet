@@ -1,0 +1,108 @@
+table mart_boom_decomposition
+	lineageTag: 34b3b48c-685a-55f8-ac89-1c7134490b11
+
+	column boom_label
+		dataType: string
+		lineageTag: b980980c-12cc-5214-b79d-c718529a2aa9
+		summarizeBy: none
+		sourceColumn: boom_label
+		sortByColumn: start_month
+
+	column start_month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: a9f555c0-6f49-582d-b202-fb14c9b2e75f
+		summarizeBy: none
+		sourceColumn: start_month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column end_month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: 5ed914ee-a80f-5fd7-a369-d610448c7959
+		summarizeBy: none
+		sourceColumn: end_month
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column months
+		dataType: int64
+		lineageTag: ffb164bb-8b58-5d04-9e63-6c1f725ef1fe
+		summarizeBy: none
+		sourceColumn: months
+
+	column is_current_boom
+		dataType: boolean
+		lineageTag: d76a181f-22c0-5847-ba6f-e4f0871b6c25
+		summarizeBy: none
+		sourceColumn: is_current_boom
+
+	column value_change_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: 06e8c112-db47-5193-a20f-af97f3aa72f1
+		summarizeBy: none
+		sourceColumn: value_change_pct
+
+	column price_change_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: a4b34209-985d-5173-928f-7da5c56e7a2a
+		summarizeBy: none
+		sourceColumn: price_change_pct
+
+	column volume_change_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: 5eb0da39-158a-569b-bc9e-c925c0485fca
+		summarizeBy: none
+		sourceColumn: volume_change_pct
+
+	column dlog_value
+		dataType: double
+		lineageTag: 16d46357-30f0-5b57-a4ad-04f8f93484db
+		summarizeBy: none
+		sourceColumn: dlog_value
+
+	column dlog_price
+		dataType: double
+		lineageTag: 03e52011-a787-509e-991a-1de0b40f9706
+		summarizeBy: none
+		sourceColumn: dlog_price
+
+	column dlog_volume
+		dataType: double
+		lineageTag: f5d4b0eb-a8fe-5723-83ad-2c38c6656240
+		summarizeBy: none
+		sourceColumn: dlog_volume
+
+	column price_share_pct
+		dataType: double
+		formatString: 0.0\%
+		lineageTag: e0765a6f-29a1-5fe8-969c-831487462688
+		summarizeBy: none
+		sourceColumn: price_share_pct
+
+	partition mart_boom_decomposition = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\mart_boom_decomposition.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"boom_label", "start_month", "end_month", "months", "is_current_boom", "value_change_pct", "price_change_pct", "volume_change_pct", "dlog_value", "dlog_price", "dlog_volume", "price_share_pct"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"boom_label", type text},
+				        {"start_month", type date},
+				        {"end_month", type date},
+				        {"months", Int64.Type},
+				        {"is_current_boom", type logical},
+				        {"value_change_pct", type number},
+				        {"price_change_pct", type number},
+				        {"volume_change_pct", type number},
+				        {"dlog_value", type number},
+				        {"dlog_price", type number},
+				        {"dlog_volume", type number},
+				        {"price_share_pct", type number}
+				    })
+				in
+				    #"Typed"

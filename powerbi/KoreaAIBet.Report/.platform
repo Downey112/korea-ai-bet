@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "KoreaAIBet"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9ce961e2-bd2f-585f-8ae7-6dfa7615aa31"
+  }
+}

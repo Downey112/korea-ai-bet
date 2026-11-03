@@ -1,0 +1,71 @@
+table budget_2027
+	lineageTag: 94a21a51-b020-529c-b432-1071f09bf4e7
+
+	column item
+		dataType: string
+		lineageTag: f5095dbd-f4e3-53e6-bb59-5fd9ba1046fb
+		summarizeBy: none
+		sourceColumn: item
+
+	column label
+		dataType: string
+		lineageTag: d0855e0d-6c4a-5511-ac1f-4f35548e7ae0
+		summarizeBy: none
+		sourceColumn: label
+
+	column amount_trn_won
+		dataType: double
+		formatString: #,0.0
+		lineageTag: dc8f3813-70b9-5a8c-8eb6-eee1982eb2a1
+		summarizeBy: none
+		sourceColumn: amount_trn_won
+
+	column change_pct
+		dataType: double
+		formatString: +0.0\%;-0.0\%;0.0\%
+		lineageTag: 1da46550-4258-5083-82c1-7c8792e99d99
+		summarizeBy: none
+		sourceColumn: change_pct
+
+	column status
+		dataType: string
+		lineageTag: 2ada068d-3965-5ebc-a428-35ba17349f75
+		summarizeBy: none
+		sourceColumn: status
+
+	column source_url
+		dataType: string
+		lineageTag: 0d020bca-cb6a-5e19-84df-773aafd70dff
+		summarizeBy: none
+		sourceColumn: source_url
+
+	column source_quote
+		dataType: string
+		lineageTag: 3d3b2a62-7f7a-5e22-aa87-40dc45e673b3
+		summarizeBy: none
+		sourceColumn: source_quote
+
+	column note
+		dataType: string
+		lineageTag: deafdec2-6cd7-5f74-84c8-ddda80d7fad5
+		summarizeBy: none
+		sourceColumn: note
+
+	partition budget_2027 = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(ProcessedFolder & "\budget_2027.parquet")),
+				    #"Selected" = Table.SelectColumns(Source, {"item", "label", "amount_trn_won", "change_pct", "status", "source_url", "source_quote", "note"}),
+				    #"Typed" = Table.TransformColumnTypes(#"Selected", {
+				        {"item", type text},
+				        {"label", type text},
+				        {"amount_trn_won", type number},
+				        {"change_pct", type number},
+				        {"status", type text},
+				        {"source_url", type text},
+				        {"source_quote", type text},
+				        {"note", type text}
+				    })
+				in
+				    #"Typed"

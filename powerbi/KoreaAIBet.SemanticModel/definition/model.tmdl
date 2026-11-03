@@ -1,0 +1,30 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["ProcessedFolder", "dim_country", "fact_indicators", "fact_kr_trade_month", "fact_kr_trade_year", "fact_trade_year", "fact_kr_chip_usd_month", "fact_kr_tax_year", "mart_chip_episodes", "mart_boom_decomposition", "mart_tax_vs_chips", "mart_tax_chip_correlation", "mart_peer_snapshot", "budget_2027"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_country
+ref table fact_indicators
+ref table fact_kr_trade_month
+ref table fact_kr_trade_year
+ref table fact_trade_year
+ref table fact_kr_chip_usd_month
+ref table fact_kr_tax_year
+ref table mart_chip_episodes
+ref table mart_boom_decomposition
+ref table mart_tax_vs_chips
+ref table mart_tax_chip_correlation
+ref table mart_peer_snapshot
+ref table budget_2027
+ref table BetMeasures
+
+ref cultureInfo en-US

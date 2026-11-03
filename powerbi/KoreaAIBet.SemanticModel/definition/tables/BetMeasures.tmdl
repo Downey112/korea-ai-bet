@@ -1,0 +1,216 @@
+table BetMeasures
+	lineageTag: a1e8b16b-1f99-5d25-b94f-1e3bcb139ecc
+
+	measure 'Aged 65+ %' = CALCULATE ( AVERAGE ( fact_indicators[value] ), fact_indicators[indicator_code] = "SP.POP.65UP.TO.ZS" )
+		formatString: 0.0\%
+		displayFolder: 1 Pressure
+		lineageTag: ca282d3f-ef45-5091-bcd2-45f64d824f33
+
+	measure 'Fertility rate' = CALCULATE ( AVERAGE ( fact_indicators[value] ), fact_indicators[indicator_code] = "SP.DYN.TFRT.IN" )
+		formatString: 0.00
+		displayFolder: 1 Pressure
+		lineageTag: 168e7138-1395-5c55-98ea-c17b420f80f2
+
+	measure 'GDP growth %' = CALCULATE ( AVERAGE ( fact_indicators[value] ), fact_indicators[indicator_code] = "NY.GDP.MKTP.KD.ZG" )
+		formatString: 0.0\%
+		displayFolder: 1 Pressure
+		lineageTag: badf4f65-7faf-5c84-bab1-a207861d0d96
+
+	measure 'R&D % GDP (latest)' = AVERAGE ( mart_peer_snapshot[rd_pct_gdp_latest] )
+		formatString: 0.00\%
+		displayFolder: 1 Pressure
+		lineageTag: cfdb28b5-e96b-5d77-aad8-ba5f0b8874d3
+
+	measure 'KR Fertility' = CALCULATE ( AVERAGE ( mart_peer_snapshot[fertility_rate_latest] ), mart_peer_snapshot[iso3] = "KOR" )
+		formatString: 0.00
+		displayFolder: 1 Pressure
+		lineageTag: 5a18d88b-1ed7-5e18-b979-43fad67e0862
+
+	measure 'KR Fertility Label' =
+			VAR yr = CALCULATE ( MAX ( mart_peer_snapshot[fertility_rate_latest_year] ), mart_peer_snapshot[iso3] = "KOR" )
+			RETURN yr & ", births per woman"
+		displayFolder: 1 Pressure
+		lineageTag: 4781e161-3928-5d3c-b35d-267d4e347dba
+
+	measure 'KR Aged 65+' = CALCULATE ( AVERAGE ( mart_peer_snapshot[pop_65plus_pct_latest] ), mart_peer_snapshot[iso3] = "KOR" )
+		formatString: 0.0\%
+		displayFolder: 1 Pressure
+		lineageTag: 49956716-cf9a-53c4-8fc4-a9442c456771
+
+	measure 'KR Aged 65+ Label' =
+			VAR yr = CALCULATE ( MAX ( mart_peer_snapshot[pop_65plus_pct_latest_year] ), mart_peer_snapshot[iso3] = "KOR" )
+			RETURN yr & ", share of population"
+		displayFolder: 1 Pressure
+		lineageTag: debeb4f6-6f63-5b17-811b-b80f1faa3632
+
+	measure 'KR Potential Growth' = 1.8
+		formatString: 0.0\%
+		displayFolder: 1 Pressure
+		lineageTag: 643ca38d-219f-5a5e-88bf-34894d191d9c
+
+	measure 'KR Potential Growth Label' = "Bank of Korea estimate, Dec 2025"
+		displayFolder: 1 Pressure
+		lineageTag: cad299bf-be4a-5472-8a79-010b202f5988
+
+	measure 'KR R&D' = CALCULATE ( AVERAGE ( mart_peer_snapshot[rd_pct_gdp_latest] ), mart_peer_snapshot[iso3] = "KOR" )
+		formatString: 0.00\%
+		displayFolder: 1 Pressure
+		lineageTag: fbb920e8-5cb1-57ac-a107-1215f95755e1
+
+	measure 'KR R&D Label' =
+			VAR yr = CALCULATE ( MAX ( mart_peer_snapshot[rd_pct_gdp_latest_year] ), mart_peer_snapshot[iso3] = "KOR" )
+			RETURN yr & ", share of GDP"
+		displayFolder: 1 Pressure
+		lineageTag: 757e802a-fff1-5ec2-87f0-4595310e56fd
+
+	measure 'Chip value index' = CALCULATE ( AVERAGE ( fact_kr_trade_month[value_idx] ), fact_kr_trade_month[series] = "semiconductors" )
+		formatString: #,0
+		displayFolder: 2 Boom
+		lineageTag: 895119b3-7928-5d7e-8c64-33b987382c65
+
+	measure 'Chip price index' = CALCULATE ( AVERAGE ( fact_kr_trade_month[price_idx] ), fact_kr_trade_month[series] = "semiconductors" )
+		formatString: #,0
+		displayFolder: 2 Boom
+		lineageTag: c18bf1b3-6d89-5bc8-905b-d8b78ffd7eeb
+
+	measure 'Chip volume index' = CALCULATE ( AVERAGE ( fact_kr_trade_month[volume_idx] ), fact_kr_trade_month[series] = "semiconductors" )
+		formatString: #,0
+		displayFolder: 2 Boom
+		lineageTag: 7b410f43-13d5-563a-bce1-d6cb740901d6
+
+	measure 'Boom price share %' = AVERAGE ( mart_boom_decomposition[price_share_pct] )
+		formatString: 0.0\%
+		displayFolder: 2 Boom
+		lineageTag: dea5763f-42f5-5c94-8c73-9ffb13ea2849
+
+	measure 'Current Boom Value Change' = CALCULATE ( AVERAGE ( mart_boom_decomposition[value_change_pct] ), mart_boom_decomposition[is_current_boom] = TRUE () )
+		formatString: +0.0\%;-0.0\%;0.0\%
+		displayFolder: 2 Boom
+		lineageTag: ee8c1012-26e5-5311-87d4-491963ad45ba
+
+	measure 'Current Boom Period Label' =
+			VAR s = CALCULATE ( MIN ( mart_boom_decomposition[start_month] ), mart_boom_decomposition[is_current_boom] = TRUE () )
+			VAR e = CALCULATE ( MAX ( mart_boom_decomposition[end_month] ), mart_boom_decomposition[is_current_boom] = TRUE () )
+			RETURN FORMAT ( s, "mmm yyyy" ) & " to " & FORMAT ( e, "mmm yyyy" )
+		displayFolder: 2 Boom
+		lineageTag: 6076f04d-de59-5ac6-8a67-f8535004d340
+
+	measure 'Current Boom Price Share' = CALCULATE ( AVERAGE ( mart_boom_decomposition[price_share_pct] ), mart_boom_decomposition[is_current_boom] = TRUE () )
+		formatString: 0.0\%
+		displayFolder: 2 Boom
+		lineageTag: cb45a9c8-e906-5866-8a9b-24ceaf3b5e2b
+
+	measure 'Current Boom Price Share Label' = "of the rise came from higher prices"
+		displayFolder: 2 Boom
+		lineageTag: b4830ef4-2b11-5ef9-b19b-938175e727c1
+
+	measure 'Downturn 2001 Drop' = CALCULATE ( AVERAGE ( mart_chip_episodes[drop_pct] ), YEAR ( mart_chip_episodes[start_month] ) = 2001 )
+		formatString: +0.0\%;-0.0\%;0.0\%
+		displayFolder: 2 Boom
+		lineageTag: 7e93610c-e65c-5229-a408-89e2867642ee
+
+	measure 'Downturn 2001 Label' =
+			VAR p = CALCULATE ( AVERAGE ( mart_chip_episodes[price_change_pct] ), YEAR ( mart_chip_episodes[start_month] ) = 2001 )
+			VAR v = CALCULATE ( AVERAGE ( mart_chip_episodes[volume_change_pct] ), YEAR ( mart_chip_episodes[start_month] ) = 2001 )
+			RETURN "prices " & FORMAT ( p, "0.0" ) & "%, volume " & FORMAT ( v, "0.0" ) & "%"
+		displayFolder: 2 Boom
+		lineageTag: a9570599-426b-5e94-ab93-e34344dd7f48
+
+	measure 'Chip share of exports % (est)' = AVERAGE ( fact_kr_chip_usd_month[chip_share_pct_est] )
+		formatString: 0.0\%
+		displayFolder: 3 Exposure
+		lineageTag: 4802cb11-1ce2-5768-8799-4263c4a78785
+
+	measure 'Latest Chip Share' =
+			VAR latest_m = CALCULATE ( MAX ( fact_kr_chip_usd_month[month] ), REMOVEFILTERS ( fact_kr_chip_usd_month ) )
+			RETURN CALCULATE ( AVERAGE ( fact_kr_chip_usd_month[chip_share_pct_est] ), fact_kr_chip_usd_month[month] = latest_m )
+		formatString: 0.0\%
+		displayFolder: 3 Exposure
+		lineageTag: 63fc639c-dc7c-5617-9823-d95f4e1b793f
+
+	measure 'Latest Chip Share Label' =
+			VAR latest_m = CALCULATE ( MAX ( fact_kr_chip_usd_month[month] ), REMOVEFILTERS ( fact_kr_chip_usd_month ) )
+			RETURN FORMAT ( latest_m, "mmm yyyy" ) & ", estimated, HS 8542 basis"
+		displayFolder: 3 Exposure
+		lineageTag: 195a3497-231c-566d-be68-411b648bb59d
+
+	measure 'Tax Chip r Lag1' = CALCULATE ( AVERAGE ( mart_tax_chip_correlation[pearson_r] ), mart_tax_chip_correlation[lag] = 1 )
+		formatString: 0.00
+		displayFolder: 3 Exposure
+		lineageTag: 772fdd17-7a63-55d1-89ce-d13443c6f86b
+
+	measure 'Tax Chip r Lag1 Label' =
+			VAR n1 = CALCULATE ( MAX ( mart_tax_chip_correlation[n] ), mart_tax_chip_correlation[lag] = 1 )
+			VAR r0 = CALCULATE ( AVERAGE ( mart_tax_chip_correlation[pearson_r] ), mart_tax_chip_correlation[lag] = 0 )
+			RETURN "n = " & n1 & " years; same-year r = " & FORMAT ( r0, "0.00" )
+		displayFolder: 3 Exposure
+		lineageTag: 982f8ead-daeb-5394-9c6d-16244bd867d2
+
+	measure 'Corp Tax 2027 vs 2024' =
+			VAR proj27 = CALCULATE ( SUM ( budget_2027[amount_trn_won] ), budget_2027[item] = "Corporate tax 2027 (projected)" )
+			VAR act24 = CALCULATE ( SUM ( fact_kr_tax_year[corporate_tax_trn_won] ), fact_kr_tax_year[year] = 2024 )
+			RETURN DIVIDE ( proj27, act24 )
+		formatString: 0.0\x
+		displayFolder: 3 Exposure
+		lineageTag: 9f76ba8f-5a51-500e-85fd-5f15c869bd0e
+
+	measure 'Corp Tax 2027 vs 2024 Label' =
+			VAR proj27 = CALCULATE ( SUM ( budget_2027[amount_trn_won] ), budget_2027[item] = "Corporate tax 2027 (projected)" )
+			VAR act24 = CALCULATE ( SUM ( fact_kr_tax_year[corporate_tax_trn_won] ), fact_kr_tax_year[year] = 2024 )
+			RETURN FORMAT ( proj27, "#,0.0" ) & " trn won projected vs " & FORMAT ( act24, "#,0.0" ) & " in 2024"
+		displayFolder: 3 Exposure
+		lineageTag: 2b3d6fe8-8414-5fb4-bca6-43c53197a0f7
+
+	measure 'Corporate tax (trn won)' = SUM ( fact_kr_tax_year[corporate_tax_trn_won] )
+		formatString: #,0.0
+		displayFolder: 3 Exposure
+		lineageTag: 996d69dc-19ed-5fe5-8157-f081f72ba46e
+
+	measure 'Budget amount (trn won)' = SUM ( budget_2027[amount_trn_won] )
+		formatString: #,0.0
+		displayFolder: 3 Exposure
+		lineageTag: d40e8fb6-68a7-5aec-9422-8a8fb473db61
+
+	measure 'Chip share % (Comtrade)' = CALCULATE ( AVERAGE ( fact_trade_year[chip_share_pct] ), fact_trade_year[is_excluded] = FALSE () )
+		formatString: 0.0\%
+		displayFolder: 4 Malaysia
+		lineageTag: 13ed17bc-d044-5190-a72f-27c95fb9c961
+
+	measure 'MY Chip Share 2024' = CALCULATE ( AVERAGE ( fact_trade_year[chip_share_pct] ), fact_trade_year[iso3] = "MYS", fact_trade_year[year] = 2024 )
+		formatString: 0.0\%
+		displayFolder: 4 Malaysia
+		lineageTag: 42f155e4-b8ce-5faf-b9d3-10cbff6e241f
+
+	measure 'KR Chip Share 2024' = CALCULATE ( AVERAGE ( fact_trade_year[chip_share_pct] ), fact_trade_year[iso3] = "KOR", fact_trade_year[year] = 2024 )
+		formatString: 0.0\%
+		displayFolder: 4 Malaysia
+		lineageTag: 1455539f-8554-5ba6-9fc1-f5b58ae3633d
+
+	measure 'Comtrade 2024 Label' = "2024, UN Comtrade HS 8542"
+		displayFolder: 4 Malaysia
+		lineageTag: bbbca818-088c-5d36-b76b-dbb75d7a63aa
+
+	measure 'MY R&D' = CALCULATE ( AVERAGE ( mart_peer_snapshot[rd_pct_gdp_latest] ), mart_peer_snapshot[iso3] = "MYS" )
+		formatString: 0.00\%
+		displayFolder: 4 Malaysia
+		lineageTag: 33cd6479-7b60-597c-9daf-d19a79cfbf32
+
+	measure 'MY R&D Label' =
+			VAR yr = CALCULATE ( MAX ( mart_peer_snapshot[rd_pct_gdp_latest_year] ), mart_peer_snapshot[iso3] = "MYS" )
+			VAR kr = CALCULATE ( AVERAGE ( mart_peer_snapshot[rd_pct_gdp_latest] ), mart_peer_snapshot[iso3] = "KOR" )
+			RETURN yr & ", share of GDP (Korea " & FORMAT ( kr, "0.00" ) & "%)"
+		displayFolder: 4 Malaysia
+		lineageTag: 67c5f6d3-9c06-5fb3-9718-f7aff0e0a939
+
+	column Value
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 66d49fee-f4c3-517a-8bc7-fe54dc0f969f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition BetMeasures = calculated
+		mode: import
+		source = {0}

@@ -131,7 +131,7 @@ def stage_seed_budget(con: duckdb.DuckDBPyConnection) -> None:
     f = SEED_DIR / "budget_2027.csv"
     con.execute(f"""
         create or replace table budget_2027 as
-        select item,
+        select item, label,
                cast(amount_trn_won as double) as amount_trn_won,
                try_cast(change_pct as double) as change_pct,
                status, source_url, source_quote, note
