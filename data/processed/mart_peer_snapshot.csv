@@ -1,0 +1,4 @@
+iso3,country_name,fertility_rate_2000,fertility_rate_latest,fertility_rate_latest_year,pop_65plus_pct_2000,pop_65plus_pct_latest,pop_65plus_pct_latest_year,pop_working_pct_2000,pop_working_pct_latest,pop_working_pct_latest_year,pop_working_count_2000,pop_working_count_latest,pop_working_count_latest_year,gdp_growth_pct_2000,gdp_growth_pct_latest,gdp_growth_pct_latest_year,rd_pct_gdp_2000,rd_pct_gdp_latest,rd_pct_gdp_latest_year,export_pct_gdp_2000,export_pct_gdp_latest,export_pct_gdp_latest_year
+JPN,Japan,1.36,1.15,2024,17.4418,29.9941,2025,68.1777,58.7675,2025,86478606.0,72499552.0,2025,2.9783,1.1931,2025,2.8584,3.4413,2023,10.3099,21.9799,2024
+KOR,South Korea,1.48,0.748,2024,7.0911,20.3304,2025,71.9289,69.4651,2025,33812395.0,35902741.0,2025,9.2019,1.007,2025,2.0494,4.9435,2023,32.8643,45.763,2025
+MYS,Malaysia,2.942,1.543,2024,3.8764,8.0332,2025,61.9554,70.6577,2025,14229806.0,25421096.0,2025,8.8589,5.1713,2025,0.469,1.0121,2022,119.8097,70.9678,2025

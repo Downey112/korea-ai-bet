@@ -1,0 +1,3 @@
+relationship,lag,pearson_r,n,first_year,last_year
+corp_tax_yoy_vs_chip_yoy_lag0,0,0.1216,24,2001,2024
+corp_tax_yoy_vs_chip_yoy_lag1,1,0.5006,23,2002,2024

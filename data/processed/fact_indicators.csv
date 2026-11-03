@@ -1,0 +1,528 @@
+iso3,year,indicator_code,indicator_name,value
+JPN,2000,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.8584
+JPN,2000,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),10.3099
+JPN,2000,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.9783
+JPN,2000,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.36
+JPN,2000,SP.POP.1564.TO,"Population ages 15-64, total",86478606.0
+JPN,2000,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.1777
+JPN,2000,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),17.4418
+JPN,2001,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.9235
+JPN,2001,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),9.9313
+JPN,2001,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.2846
+JPN,2001,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.33
+JPN,2001,SP.POP.1564.TO,"Population ages 15-64, total",86140893.0
+JPN,2001,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),67.748
+JPN,2001,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),18.0343
+JPN,2002,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.9651
+JPN,2002,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),10.6941
+JPN,2002,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.085
+JPN,2002,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.32
+JPN,2002,SP.POP.1564.TO,"Population ages 15-64, total",85801645.0
+JPN,2002,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),67.3245
+JPN,2002,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),18.5997
+JPN,2003,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.9932
+JPN,2003,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),11.3308
+JPN,2003,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.3801
+JPN,2003,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.29
+JPN,2003,SP.POP.1564.TO,"Population ages 15-64, total",85516887.0
+JPN,2003,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),66.9576
+JPN,2003,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),19.0946
+JPN,2004,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.9813
+JPN,2004,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),12.6608
+JPN,2004,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.1129
+JPN,2004,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.29
+JPN,2004,SP.POP.1564.TO,"Population ages 15-64, total",85007810.0
+JPN,2004,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),66.5366
+JPN,2004,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),19.6216
+JPN,2005,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.1309
+JPN,2005,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),13.6894
+JPN,2005,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.8483
+JPN,2005,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.26
+JPN,2005,SP.POP.1564.TO,"Population ages 15-64, total",84286399.0
+JPN,2005,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),65.9657
+JPN,2005,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),20.2819
+JPN,2006,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2277
+JPN,2006,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),15.4992
+JPN,2006,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.5463
+JPN,2006,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.32
+JPN,2006,SP.POP.1564.TO,"Population ages 15-64, total",83556704.0
+JPN,2006,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),65.3532
+JPN,2006,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),20.9785
+JPN,2007,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2926
+JPN,2007,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.1191
+JPN,2007,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.7284
+JPN,2007,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.34
+JPN,2007,SP.POP.1564.TO,"Population ages 15-64, total",82918195.0
+JPN,2007,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),64.7793
+JPN,2007,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),21.6267
+JPN,2008,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2922
+JPN,2008,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.0551
+JPN,2008,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-1.1666
+JPN,2008,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.37
+JPN,2008,SP.POP.1564.TO,"Population ages 15-64, total",82234517.0
+JPN,2008,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),64.2141
+JPN,2008,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),22.2534
+JPN,2009,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.1959
+JPN,2009,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),12.3085
+JPN,2009,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-5.9359
+JPN,2009,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.37
+JPN,2009,SP.POP.1564.TO,"Population ages 15-64, total",81669561.0
+JPN,2009,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),63.7809
+JPN,2009,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),22.7625
+JPN,2010,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.105
+JPN,2010,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),14.7827
+JPN,2010,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.1365
+JPN,2010,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.39
+JPN,2010,SP.POP.1564.TO,"Population ages 15-64, total",81364210.0
+JPN,2010,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),63.531
+JPN,2010,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),23.098
+JPN,2011,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2054
+JPN,2011,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),14.6645
+JPN,2011,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-0.2004
+JPN,2011,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.39
+JPN,2011,SP.POP.1564.TO,"Population ages 15-64, total",80608631.0
+JPN,2011,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),63.0578
+JPN,2011,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),23.6527
+JPN,2012,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.1737
+JPN,2012,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),14.2739
+JPN,2012,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.6489
+JPN,2012,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.41
+JPN,2012,SP.POP.1564.TO,"Population ages 15-64, total",79501672.0
+JPN,2012,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),62.2912
+JPN,2012,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),24.5127
+JPN,2013,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.279
+JPN,2013,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),15.6037
+JPN,2013,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.9973
+JPN,2013,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.43
+JPN,2013,SP.POP.1564.TO,"Population ages 15-64, total",78375939.0
+JPN,2013,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),61.4979
+JPN,2013,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),25.4121
+JPN,2014,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.3679
+JPN,2014,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.1079
+JPN,2014,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.9059
+JPN,2014,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.42
+JPN,2014,SP.POP.1564.TO,"Population ages 15-64, total",77387735.0
+JPN,2014,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),60.8031
+JPN,2014,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),26.2262
+JPN,2015,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2407
+JPN,2015,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.0921
+JPN,2015,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.8
+JPN,2015,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.45
+JPN,2015,SP.POP.1564.TO,"Population ages 15-64, total",76580356.0
+JPN,2015,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),60.2326
+JPN,2015,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),26.923
+JPN,2016,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.1067
+JPN,2016,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),15.7224
+JPN,2016,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.705
+JPN,2016,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.44
+JPN,2016,SP.POP.1564.TO,"Population ages 15-64, total",75946619.0
+JPN,2016,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),59.7647
+JPN,2016,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),27.512
+JPN,2017,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.1664
+JPN,2017,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.2158
+JPN,2017,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.6235
+JPN,2017,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.43
+JPN,2017,SP.POP.1564.TO,"Population ages 15-64, total",75439583.0
+JPN,2017,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),59.4143
+JPN,2017,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),27.9778
+JPN,2018,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2192
+JPN,2018,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.9111
+JPN,2018,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.8341
+JPN,2018,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.42
+JPN,2018,SP.POP.1564.TO,"Population ages 15-64, total",75025904.0
+JPN,2018,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),59.1636
+JPN,2018,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),28.3452
+JPN,2019,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2182
+JPN,2019,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.0378
+JPN,2019,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-0.3085
+JPN,2019,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.36
+JPN,2019,SP.POP.1564.TO,"Population ages 15-64, total",74719384.0
+JPN,2019,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),59.0047
+JPN,2019,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),28.6288
+JPN,2020,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2656
+JPN,2020,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),15.1287
+JPN,2020,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-4.2833
+JPN,2020,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.33
+JPN,2020,SP.POP.1564.TO,"Population ages 15-64, total",74318579.0
+JPN,2020,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),58.8611
+JPN,2020,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),28.9182
+JPN,2021,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.2738
+JPN,2021,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),17.462
+JPN,2021,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.5642
+JPN,2021,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.3
+JPN,2021,SP.POP.1564.TO,"Population ages 15-64, total",73818755.0
+JPN,2021,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),58.7347
+JPN,2021,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),29.217
+JPN,2022,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.4005
+JPN,2022,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),20.6479
+JPN,2022,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.3316
+JPN,2022,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.26
+JPN,2022,SP.POP.1564.TO,"Population ages 15-64, total",73496437.0
+JPN,2022,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),58.7384
+JPN,2022,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),29.4026
+JPN,2023,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.4413
+JPN,2023,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),21.0593
+JPN,2023,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.7208
+JPN,2023,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.2
+JPN,2023,SP.POP.1564.TO,"Population ages 15-64, total",73201968.0
+JPN,2023,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),58.7889
+JPN,2023,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),29.5618
+JPN,2024,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),21.9799
+JPN,2024,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-0.2401
+JPN,2024,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.15
+JPN,2024,SP.POP.1564.TO,"Population ages 15-64, total",72876601.0
+JPN,2024,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),58.7831
+JPN,2024,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),29.7808
+JPN,2025,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.1931
+JPN,2025,SP.POP.1564.TO,"Population ages 15-64, total",72499552.0
+JPN,2025,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),58.7675
+JPN,2025,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),29.9941
+KOR,2000,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.0494
+KOR,2000,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),32.8643
+KOR,2000,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),9.2019
+KOR,2000,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.48
+KOR,2000,SP.POP.1564.TO,"Population ages 15-64, total",33812395.0
+KOR,2000,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.9289
+KOR,2000,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),7.0911
+KOR,2001,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.1987
+KOR,2001,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),30.8629
+KOR,2001,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.7259
+KOR,2001,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.309
+KOR,2001,SP.POP.1564.TO,"Population ages 15-64, total",34010144.0
+KOR,2001,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.7966
+KOR,2001,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),7.4449
+KOR,2002,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.1304
+KOR,2002,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),28.8691
+KOR,2002,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),7.744
+KOR,2002,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.178
+KOR,2002,SP.POP.1564.TO,"Population ages 15-64, total",34167612.0
+KOR,2002,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.7133
+KOR,2002,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),7.8161
+KOR,2003,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.1966
+KOR,2003,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),30.4447
+KOR,2003,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.0747
+KOR,2003,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.191
+KOR,2003,SP.POP.1564.TO,"Population ages 15-64, total",34324216.0
+KOR,2003,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.6695
+KOR,2003,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),8.2012
+KOR,2004,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.3529
+KOR,2004,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),35.6099
+KOR,2004,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.1836
+KOR,2004,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.164
+KOR,2004,SP.POP.1564.TO,"Population ages 15-64, total",34461353.0
+KOR,2004,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.6713
+KOR,2004,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),8.6009
+KOR,2005,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.4273
+KOR,2005,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),34.1272
+KOR,2005,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.3582
+KOR,2005,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.085
+KOR,2005,SP.POP.1564.TO,"Population ages 15-64, total",34574720.0
+KOR,2005,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.7548
+KOR,2005,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),9.0004
+KOR,2006,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.6152
+KOR,2006,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),34.4457
+KOR,2006,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.245
+KOR,2006,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.132
+KOR,2006,SP.POP.1564.TO,"Population ages 15-64, total",34818893.0
+KOR,2006,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.883
+KOR,2006,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),9.4206
+KOR,2007,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.759
+KOR,2007,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),36.0415
+KOR,2007,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.842
+KOR,2007,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.259
+KOR,2007,SP.POP.1564.TO,"Population ages 15-64, total",35067244.0
+KOR,2007,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.0309
+KOR,2007,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),9.8571
+KOR,2008,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),2.8677
+KOR,2008,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),45.8472
+KOR,2008,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.0044
+KOR,2008,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.192
+KOR,2008,SP.POP.1564.TO,"Population ages 15-64, total",35435085.0
+KOR,2008,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.2358
+KOR,2008,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),10.2481
+KOR,2009,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.0215
+KOR,2009,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),43.5106
+KOR,2009,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.8199
+KOR,2009,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.149
+KOR,2009,SP.POP.1564.TO,"Population ages 15-64, total",35721550.0
+KOR,2009,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.446
+KOR,2009,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),10.6131
+KOR,2010,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.1791
+KOR,2010,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),45.2719
+KOR,2010,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),6.9817
+KOR,2010,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.226
+KOR,2010,SP.POP.1564.TO,"Population ages 15-64, total",35985989.0
+KOR,2010,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.6196
+KOR,2010,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),10.9917
+KOR,2011,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.4441
+KOR,2011,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),51.2813
+KOR,2011,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.688
+KOR,2011,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.244
+KOR,2011,SP.POP.1564.TO,"Population ages 15-64, total",36382446.0
+KOR,2011,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.8572
+KOR,2011,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),11.3504
+KOR,2012,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.6852
+KOR,2012,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),52.0235
+KOR,2012,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.5477
+KOR,2012,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.297
+KOR,2012,SP.POP.1564.TO,"Population ages 15-64, total",36700392.0
+KOR,2012,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),73.1086
+KOR,2012,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),11.7034
+KOR,2013,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.7749
+KOR,2013,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),49.2339
+KOR,2013,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.2914
+KOR,2013,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.187
+KOR,2013,SP.POP.1564.TO,"Population ages 15-64, total",36934964.0
+KOR,2013,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),73.2417
+KOR,2013,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),12.0971
+KOR,2014,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.8898
+KOR,2014,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),45.7876
+KOR,2014,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.2147
+KOR,2014,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.205
+KOR,2014,SP.POP.1564.TO,"Population ages 15-64, total",37184656.0
+KOR,2014,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),73.2751
+KOR,2014,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),12.5254
+KOR,2015,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.7891
+KOR,2015,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),40.9681
+KOR,2015,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.9203
+KOR,2015,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.239
+KOR,2015,SP.POP.1564.TO,"Population ages 15-64, total",37384508.0
+KOR,2015,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),73.2815
+KOR,2015,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),12.9547
+KOR,2016,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),3.7864
+KOR,2016,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),38.113
+KOR,2016,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.1715
+KOR,2016,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.172
+KOR,2016,SP.POP.1564.TO,"Population ages 15-64, total",37533180.0
+KOR,2016,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),73.2815
+KOR,2016,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),13.3631
+KOR,2017,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.0734
+KOR,2017,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),38.8489
+KOR,2017,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.4332
+KOR,2017,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.052
+KOR,2017,SP.POP.1564.TO,"Population ages 15-64, total",37550935.0
+KOR,2017,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),73.1105
+KOR,2017,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),13.8737
+KOR,2018,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.2716
+KOR,2018,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),39.4523
+KOR,2018,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.1761
+KOR,2018,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.977
+KOR,2018,SP.POP.1564.TO,"Population ages 15-64, total",37571156.0
+KOR,2018,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.8334
+KOR,2018,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),14.4544
+KOR,2019,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.3638
+KOR,2019,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),37.0413
+KOR,2019,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.3138
+KOR,2019,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.918
+KOR,2019,SP.POP.1564.TO,"Population ages 15-64, total",37543009.0
+KOR,2019,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.5261
+KOR,2019,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),15.0635
+KOR,2020,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.5214
+KOR,2020,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),34.6152
+KOR,2020,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-0.7002
+KOR,2020,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.837
+KOR,2020,SP.POP.1564.TO,"Population ages 15-64, total",37354839.0
+KOR,2020,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),72.0632
+KOR,2020,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),15.8222
+KOR,2021,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.5967
+KOR,2021,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),39.3388
+KOR,2021,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.613
+KOR,2021,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.808
+KOR,2021,SP.POP.1564.TO,"Population ages 15-64, total",37036120.0
+KOR,2021,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.5404
+KOR,2021,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),16.6596
+KOR,2022,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.8475
+KOR,2022,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),45.2949
+KOR,2022,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.7276
+KOR,2022,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.778
+KOR,2022,SP.POP.1564.TO,"Population ages 15-64, total",36739762.0
+KOR,2022,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),71.1011
+KOR,2022,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),17.4846
+KOR,2023,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),4.9435
+KOR,2023,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),41.3215
+KOR,2023,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.583
+KOR,2023,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.721
+KOR,2023,SP.POP.1564.TO,"Population ages 15-64, total",36557801.0
+KOR,2023,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),70.6942
+KOR,2023,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),18.335
+KOR,2024,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),44.3582
+KOR,2024,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),2.0036
+KOR,2024,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",0.748
+KOR,2024,SP.POP.1564.TO,"Population ages 15-64, total",36307699.0
+KOR,2024,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),70.1584
+KOR,2024,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),19.2735
+KOR,2025,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),45.763
+KOR,2025,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),1.007
+KOR,2025,SP.POP.1564.TO,"Population ages 15-64, total",35902741.0
+KOR,2025,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),69.4651
+KOR,2025,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),20.3304
+MYS,2000,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),0.469
+MYS,2000,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),119.8097
+MYS,2000,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),8.8589
+MYS,2000,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.942
+MYS,2000,SP.POP.1564.TO,"Population ages 15-64, total",14229806.0
+MYS,2000,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),61.9554
+MYS,2000,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),3.8764
+MYS,2001,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),110.4025
+MYS,2001,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),0.5177
+MYS,2001,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.807
+MYS,2001,SP.POP.1564.TO,"Population ages 15-64, total",14676672.0
+MYS,2001,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),62.3835
+MYS,2001,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),3.9429
+MYS,2002,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),0.6525
+MYS,2002,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),108.3053
+MYS,2002,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.391
+MYS,2002,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.658
+MYS,2002,SP.POP.1564.TO,"Population ages 15-64, total",15139792.0
+MYS,2002,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),62.8143
+MYS,2002,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.0311
+MYS,2003,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),106.9434
+MYS,2003,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.7885
+MYS,2003,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.601
+MYS,2003,SP.POP.1564.TO,"Population ages 15-64, total",15614705.0
+MYS,2003,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),63.2697
+MYS,2003,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.1302
+MYS,2004,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),0.5999
+MYS,2004,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),115.3733
+MYS,2004,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),6.7834
+MYS,2004,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.493
+MYS,2004,SP.POP.1564.TO,"Population ages 15-64, total",16106788.0
+MYS,2004,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),63.7722
+MYS,2004,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.23
+MYS,2005,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),112.899
+MYS,2005,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.3321
+MYS,2005,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.391
+MYS,2005,SP.POP.1564.TO,"Population ages 15-64, total",16616362.0
+MYS,2005,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),64.3146
+MYS,2005,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.3303
+MYS,2006,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),0.6111
+MYS,2006,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),112.1855
+MYS,2006,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.5848
+MYS,2006,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.308
+MYS,2006,SP.POP.1564.TO,"Population ages 15-64, total",17136031.0
+MYS,2006,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),64.8652
+MYS,2006,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.4353
+MYS,2007,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),106.1683
+MYS,2007,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),6.2988
+MYS,2007,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.252
+MYS,2007,SP.POP.1564.TO,"Population ages 15-64, total",17660155.0
+MYS,2007,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),65.4119
+MYS,2007,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.5476
+MYS,2008,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),0.7885
+MYS,2008,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),99.4996
+MYS,2008,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.8318
+MYS,2008,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.262
+MYS,2008,SP.POP.1564.TO,"Population ages 15-64, total",18189617.0
+MYS,2008,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),65.976
+MYS,2008,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.6686
+MYS,2009,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.01
+MYS,2009,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),91.4168
+MYS,2009,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-1.5135
+MYS,2009,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.223
+MYS,2009,SP.POP.1564.TO,"Population ages 15-64, total",18722743.0
+MYS,2009,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),66.5703
+MYS,2009,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.8029
+MYS,2010,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.0361
+MYS,2010,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),86.9303
+MYS,2010,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),7.4248
+MYS,2010,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.144
+MYS,2010,SP.POP.1564.TO,"Population ages 15-64, total",19231028.0
+MYS,2010,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),67.1105
+MYS,2010,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),4.9487
+MYS,2011,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.0334
+MYS,2011,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),85.2554
+MYS,2011,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.2939
+MYS,2011,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.153
+MYS,2011,SP.POP.1564.TO,"Population ages 15-64, total",19684592.0
+MYS,2011,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),67.5007
+MYS,2011,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),5.0943
+MYS,2012,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.0927
+MYS,2012,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),79.2999
+MYS,2012,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.4735
+MYS,2012,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.117
+MYS,2012,SP.POP.1564.TO,"Population ages 15-64, total",20107982.0
+MYS,2012,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),67.7885
+MYS,2012,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),5.2388
+MYS,2013,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),75.629
+MYS,2013,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.6937
+MYS,2013,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.07
+MYS,2013,SP.POP.1564.TO,"Population ages 15-64, total",20532647.0
+MYS,2013,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.0469
+MYS,2013,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),5.3886
+MYS,2014,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.2628
+MYS,2014,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),73.7935
+MYS,2014,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),6.0067
+MYS,2014,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.058
+MYS,2014,SP.POP.1564.TO,"Population ages 15-64, total",20959719.0
+MYS,2014,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.2813
+MYS,2014,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),5.545
+MYS,2015,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.2795
+MYS,2015,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),69.4487
+MYS,2015,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.0915
+MYS,2015,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",2.008
+MYS,2015,SP.POP.1564.TO,"Population ages 15-64, total",21386602.0
+MYS,2015,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.4748
+MYS,2015,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),5.7085
+MYS,2016,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.4152
+MYS,2016,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),66.7754
+MYS,2016,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.4498
+MYS,2016,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.942
+MYS,2016,SP.POP.1564.TO,"Population ages 15-64, total",21813486.0
+MYS,2016,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.6181
+MYS,2016,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),5.8799
+MYS,2017,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),70.0117
+MYS,2017,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.8127
+MYS,2017,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.893
+MYS,2017,SP.POP.1564.TO,"Population ages 15-64, total",22238297.0
+MYS,2017,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.7308
+MYS,2017,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),6.0651
+MYS,2018,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.0403
+MYS,2018,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),68.555
+MYS,2018,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.8431
+MYS,2018,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.838
+MYS,2018,SP.POP.1564.TO,"Population ages 15-64, total",22661661.0
+MYS,2018,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),68.8575
+MYS,2018,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),6.2667
+MYS,2019,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),65.2778
+MYS,2019,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),4.4132
+MYS,2019,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.777
+MYS,2019,SP.POP.1564.TO,"Population ages 15-64, total",23088580.0
+MYS,2019,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),69.0436
+MYS,2019,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),6.4823
+MYS,2020,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),0.9506
+MYS,2020,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),61.5779
+MYS,2020,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),-5.4568
+MYS,2020,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.68
+MYS,2020,SP.POP.1564.TO,"Population ages 15-64, total",23490230.0
+MYS,2020,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),69.3141
+MYS,2020,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),6.7249
+MYS,2021,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),70.6331
+MYS,2021,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.3153
+MYS,2021,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.555
+MYS,2021,SP.POP.1564.TO,"Population ages 15-64, total",23877045.0
+MYS,2021,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),69.6481
+MYS,2021,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),6.9586
+MYS,2022,GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP),1.0121
+MYS,2022,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),76.8078
+MYS,2022,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),9.0317
+MYS,2022,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.55
+MYS,2022,SP.POP.1564.TO,"Population ages 15-64, total",24280146.0
+MYS,2022,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),69.9807
+MYS,2022,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),7.1856
+MYS,2023,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),68.679
+MYS,2023,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),3.5371
+MYS,2023,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.55
+MYS,2023,SP.POP.1564.TO,"Population ages 15-64, total",24680030.0
+MYS,2023,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),70.2608
+MYS,2023,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),7.4512
+MYS,2024,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),71.3411
+MYS,2024,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.1055
+MYS,2024,SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",1.543
+MYS,2024,SP.POP.1564.TO,"Population ages 15-64, total",25059539.0
+MYS,2024,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),70.4758
+MYS,2024,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),7.7379
+MYS,2025,NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP),70.9678
+MYS,2025,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),5.1713
+MYS,2025,SP.POP.1564.TO,"Population ages 15-64, total",25421096.0
+MYS,2025,SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),70.6577
+MYS,2025,SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total population),8.0332

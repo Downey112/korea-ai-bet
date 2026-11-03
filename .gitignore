@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Raw downloads and the local warehouse are rebuilt by the pipeline
+data/raw/
+data/warehouse.duckdb
+data/warehouse.duckdb.wal
+
+# Power BI local-only files
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
